@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="https://www.aluracursos.com/assets/img/home/alura-logo.1730889068.svg" alt="Logo" class="logo">
+        </div>
+        <ul class="navbar-links">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="#login">Iniciar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div class="container">
+        <!-- Formulario -->
+        <div class="form-container">
+            <h2>Agregar Nuevo Producto</h2>
+            <form id="productForm">
+                <div class="form-group">
+                    <label>Título del Producto</label>
+                    <input
+                        type="text"
+                        id="title"
+                        placeholder="Nombre del producto"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label>Precio</label>
+                    <input
+                        type="number"
+                        id="price"
+                        placeholder="99.99"
+                        step="0.01"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label>URL de la Imagen</label>
+                    <input
+                        type="url"
+                        id="image"
+                        placeholder="https://ejemplo.com/imagen.jpg"
+                        required
+                    />
+                </div>
+                <div class="button-group">
+                    <button type="submit" class="btn btn-primary">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="12" y1="8" x2="12" y2="16"/>
+                            <line x1="8" y1="12" x2="16" y2="12"/>
+                        </svg>
+                        Crear Producto
+                    </button>
+                    <button type="button" class="btn btn-secondary" id="clearBtn">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            <path d="M15 12H9m6 0l-3-3m3 3l-3 3"/>
+                        </svg>
+                        Limpiar Formulario
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Grid de Productos -->
+        <div class="products-section">
+            <h2>Productos</h2>
+            <div class="products-grid" id="productsGrid">
+                <!-- Los productos se insertarán aquí dinámicamente -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+     <!-- footer -->
+        <footer class="footer">
+            <p class="copyright">Copy <span class="heart">❤</span> by Helen López &copy; 2025</p>
+            <div class="links__container">
+                <a class="link" href="https://www.linkedin.com/in/helen-l%C3%B3pez-7107a9224/">
+                    <i class='bx bxl-linkedin-square'></i>
+                </a>
+                <a class="link" href="https://github.com/inghelen">
+                    <i class='bx bxl-github'></i>
+                </a>
+            </div>
+        </footer>
+
+</body>
+
+</html>
