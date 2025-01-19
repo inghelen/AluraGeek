@@ -24,4 +24,4 @@ Una aplicación web sencilla para gestionar productos, incluyendo funciones para
 1. Clona este repositorio:
 
    ```bash
-   git clone https://github.com/tuusuario/gestion-productos.git
+   git clone https://github.com/inghelen/AluraGeek
